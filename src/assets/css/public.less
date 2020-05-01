@@ -1,0 +1,46 @@
+@import "dimension.less";
+// text
+.text-center {
+    text-align: center;
+}
+.text-right {
+    text-align: right;
+}
+
+// flex
+.flex-box(@direction: row, @justifyContent: flex-start, @alignItem: flex-start, @flex-wrap: nowrap) {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    direction: @direction;
+    justify-content: @justifyContent;
+    align-items: @alignItem;
+    flex-wrap: @flex-wrap;
+}
+.flex-start-center-no {
+    .flex-box(row, flex-start, center);
+}
+.flex-end-center-no {
+    .flex-box(row, flex-end, center);
+}
+.flex-center-center-no {
+    .flex-box(row, center, center);
+}
+.flex-between-center-no {
+    .flex-box(row, space-between, center);
+}
+.flexgrow1 {
+    flex-grow: 1;
+}
+.form-box {
+    width: 400px;
+    margin: 0 auto;
+}
+.over-hidden {
+    overflow: hidden;
+}
+.pointer {
+    cursor: pointer;
+}
